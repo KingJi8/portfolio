@@ -152,7 +152,7 @@ $(function(){
     lifeMove();
     
     /*more about*/
-    /*more 답 펴지기*/
+    /*more 답 펴지기
     $('.m-question').each(function(){
         $(this).find('.m-q-question').on('click',function(){
             if($(this).hasClass('active') == false) {
@@ -167,7 +167,7 @@ $(function(){
             }
             
         })
-    })
+    })*/
     
     
     
