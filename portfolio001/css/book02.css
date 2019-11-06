@@ -1,0 +1,458 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:'notoS';
+    src:url(fonts/NotoSansKR-Regular.woff);
+}
+
+html,body {
+    font-family:'notoS',sans-serif;
+    width:100%;
+    margin:0 auto;
+    background:#ffffff;
+}
+.container-inner {
+    width:100%;
+    height:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 100px;
+}
+.slideSec {
+    width:100%;
+    background:#333333;
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'notoS',sans-serif;
+}
+ul,ol,li {
+    list-style:none;
+}
+img {
+    vertical-align:bottom;
+}
+a {
+    text-decoration:none;
+    color:#333333;
+}
+button {
+    border:none;
+    outline:none;
+    background:transparent;
+}
+.clearB::after {
+    content:'';
+    display:block;
+    clear:both;
+}
+
+/*메인 레이아웃*/
+.contents {
+    width:100%;
+    margin:20px 0 50px;    
+}
+.aboutSec {
+    width:100%;
+}
+.book-img {
+    width:35%;
+    float:left;
+    margin-top:10px;
+    padding-right:2%;
+}
+.book-all {
+    width:65%;
+    float:right;
+    padding-left:2%;
+}
+.book-about {
+    width:60%;
+    float:left;
+}
+.book-time {
+    margin-top:15px;
+    width:40%;
+    float:right;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.score {
+    padding:15px 0;
+    width:190px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.stars {
+    display:inline-block;
+}
+.icons {
+    width:80%;
+}
+.icons li {
+    float:left;
+    width:20%;
+    padding:15px 1%;
+    text-align:center;
+}
+.lists {
+    width:100%;
+    margin:20px 0;
+    padding:15px 10px;
+    border-top:2px solid #c06c84;
+    border-bottom:2px solid #c06c84;
+}
+.small-icons {
+    display:inline-block;
+}
+.small-icons li {
+    float:left;
+    margin-right:30px;
+}
+.small-icons li:last-child {
+    margin-right:0;
+}
+.detailSec {
+    margin:50px 0;
+}
+.detailSec article {
+    padding-bottom:30px;
+}
+.r-scoreBox {
+    width:20%;
+    float:left;
+    text-align:center;
+}
+.r-star {
+    width:80%;
+    margin:10px auto 0;
+    text-align:center;    
+}
+.r-commentBox {
+    width:80%;
+    float:right;
+}
+
+
+.book-img img {
+    width:100%;
+    border:1px solid #dddddd;
+}
+
+.book-nav {
+    margin-top:10px;
+}
+.book-nav span {
+    margin:0 5px;
+    font-size:12px;
+    color:#c06c84;
+}
+.book-nav span:first-child {
+    margin-left:0;
+}
+.book-nav span:last-child {
+    font-size:14px;
+}
+.book-title {
+    padding:15px 0 10px;
+    font-size:30px;
+    font-weight:bold;
+}
+.book-names span {
+    padding:0 2px;
+    font-size:12px;
+    color:#666666;
+}
+.hourglass {
+    width:30px;
+    margin-right:10px;
+}
+.book-time span {
+    font-size:24px;
+    font-weight:bold;
+    color:#c06c84;
+    line-height:30px;
+}
+.stars img {
+    width:30px;
+    display:block;
+    float:left;
+}
+.score span {
+    color:#666666;
+    font-weight:bold;
+}
+.icons button {
+    display:block;
+    width:100%;
+    cursor:pointer;
+}
+.icons button p {  
+    margin-top:5px;
+    font-size:12px;
+    color:#333333;
+}
+.icons img {
+    width:70%;
+}
+.lists li {
+    padding:5px 0;
+    font-size:16px;
+    display:flex;
+    align-items:center;
+}
+.lists li * {
+    margin-right:18px;
+    color:#666666;
+    font-size:14px;
+}
+.lists li span:last-child {
+    padding-right:0;
+}
+.lists .b-time {
+    color:#c06c84;
+}
+.small-icons button {
+    cursor:pointer;
+}
+.small-icons p {
+    display:inline;
+    font-size:12px;
+}
+.small-icons img {
+    width:20px
+}
+.d-title {
+    font-size:24px;
+    color:#c06c84;
+    padding-bottom:10px;
+    border-bottom:2px solid #c06c84;
+}
+.d-name {
+    margin-top:14px;
+    text-indent: 10px;
+    color:#666666;
+}
+.detailSec p {    
+    font-size:14px;
+    line-height:1.7;
+    text-indent: 1em;
+    padding:0 10px
+}
+.d-txt {
+    margin-top:10px;
+}
+.synopsisSec .d-txt {
+    margin-top:20px;
+}
+.review>h2 {
+    font-size:24px;
+    color:#666666;
+    padding-bottom:10px;
+    margin-bottom:20px;
+    border-bottom:2px solid #666666;
+}
+.r-scoreBox>h3 {
+    color:#c06c84;
+    font-size:16px;
+}
+.r-star img {
+    display:block;
+    float:left;
+    width:20%;
+    margin:10px auto 0;    
+}
+.your-score {
+    display:inline-block;
+    color:#666666;
+}
+.r-commentBox textarea {
+    width:85%;
+    height:100px;
+    font-size:14px;
+    float:left;  
+    border:1px solid #c06c84;
+    border-radius:3px;
+}
+.r-commentBox textarea:active {
+    outline:2px solid #c06c84;
+}
+.r-commentBox button {
+    width:14%;
+    height:100px;
+    margin-left:1%;
+    border:2px solid #666666;
+    border-radius:10px;
+    background:rgba(255, 229, 219,.8);
+    color:#666666;
+    font-size:20px;
+    font-weight:bold;
+    float:right;
+    cursor:pointer;
+}
+
+
+@media screen and (max-width:1200px) {
+    .container-inner {
+        padding:0 3%;
+    }
+    
+    
+}
+
+@media screen and (max-width:800px) {
+    .container-inner {
+        padding:0 20px;
+    }
+    .contents {
+        margin-top:190px;
+    }    
+    .book-nav span {
+        margin:0 2.5px;
+        font-size:10px;
+        color:#c06c84;
+    }
+    .book-about {
+        width:100%;
+        float:initial;
+    }
+    .book-time {
+        margin:25px 0;
+        width:100%;
+        float:initial;
+        display:block;
+    }
+    .score {
+        padding:0;
+        margin-bottom:25px;
+    }
+    .book-nav span:first-child {
+        margin-left:0;
+    }
+    .book-nav span:last-child {
+        font-size:12px;
+    }
+    .book-title {
+        font-size:4.5vw;
+        padding:10px 0 5px;
+    }
+    .book-names span {
+        font-size:10px;
+    }
+    .hourglass {
+        width:24px;
+        margin-right:5px;
+    }
+    .book-time span {
+        font-size:20px;
+        line-height:1;
+    }
+    .r-commentBox button {
+        font-size:2.5vw;
+    }
+}
+@media screen and (max-width:600px) {
+    .icons {
+        width:100%;
+    }
+    .small-icons li {
+        margin-right:12px;
+    }
+    .icons button p {
+        font-size:2vw;
+    }
+}
+@media screen and (max-width:450px) {
+    .container-inner {
+        padding:0 5px;
+    }
+    .contents {
+        margin-top:140px;
+    }
+    .book-img {
+        width:100%;
+        float:initial;
+        text-align:center;
+    }
+    .book-all {
+        width:100%;
+        float:initial;
+    }
+    .book-about {
+        width:60%;
+        float:left;
+        margin-bottom:15px;
+    }
+    .book-time {
+        margin-top:25px;
+        width:40%;
+        float:right;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .book-img img {
+        width:35%;
+        margin:20px;
+    }
+    .score {
+        margin:7px 0 10px;
+    }
+    .icons {
+        width:100%;
+    }
+    .icons li {
+        width:15%;
+        margin:15px 2.5%;
+        padding:0;
+    }
+    .d-title {
+        text-indent:5px;
+    }
+    .review>h2 {
+        text-indent:5px;
+    }
+    .r-scoreBox {
+        width:92%;
+        float:initial;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:10px auto;
+    }
+    .r-scoreBox>h3 {
+        display:inline-block;
+    }
+    .r-starBox {
+        width:auto;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .r-star {
+        width:auto;
+        margin:0 10px 0 0;
+    }
+    .r-star img {
+        width:20px;
+        margin:0;
+        cursor:pointer;
+    }
+    .r-commentBox {
+        width:95%;
+        float:initial;
+        margin:0 auto;
+    }
+    .r-commentBox textarea {
+        width:80%;
+    }
+    .r-commentBox button {
+        width:19%;
+        font-size:4vw;
+    }
+    
+}
