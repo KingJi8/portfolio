@@ -238,8 +238,8 @@
 
 /*life*/
 .lifeSec {
-    height:500px;
     position:relative;
+    margin-bottom:150px;
 }
 .lifeSec:before {
     content:'';
@@ -527,7 +527,7 @@
     .s-txt {
         font-size:14px;
     }
-    /*life*/    
+    /*life*/
     .l-con:nth-child(2n-1) {
         margin-left:40px;
     }
