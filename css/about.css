@@ -122,12 +122,12 @@
     word-break:keep-all;
     position:relative;
     animation-name:tttfade;
-    animation-duration:2s;
+    animation-duration:3s;
     animation-timing-function:ease-in-out
 }
 @keyframes tttfade {
-    0% {opacity:0; top:20;}
-    50% {opacity:0; top:20;}
+    0% {opacity:0; top:20px;}
+    50% {opacity:0; top:20px;}
     100% {opacity:1; top:0;}
 }
 .t-t-t-hide {
@@ -137,13 +137,14 @@
     line-height:2;
     color:#333333;
     animation-name:ttthide;
-    animation-duration:1s;
+    animation-duration:2s;
     animation-iteration-count:1;
     animation-timing-function: ease-in-out;
 }
 @keyframes ttthide {
-    from {top:100%;}
-    to {top:0;}
+    0% {top:100%;}
+    50% {top:100%;}
+    100% {top:0;}
 }
 
 /*콘텐츠*/
@@ -355,7 +356,7 @@
         width:75%;
     }
     .s-txt {
-        font-size:14px;
+        font-size:13px;
     }
 }
 @media screen and (max-width:800px) {
@@ -384,6 +385,7 @@
     }
     .t-t-t-txt {
         font-size:16px;
+        display:inline-block;
     }
     [class^="t-t-txt"] {
         margin-bottom:20px;

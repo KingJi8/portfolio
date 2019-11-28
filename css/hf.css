@@ -9,7 +9,7 @@
         url(../fonts/NotoSansCJKkr-Thin.woff2) format('woff2'),
         url(../fonts/NotoSansCJKkr-Thin.woff) format('woff'),
         url(../fonts/NotoSansCJKkr-Thin.otf) format('opentype');
-    src:local(※), url(../fonts//NotoSansCJKkr-Thin.woff) format('woff');        
+    src:local(※), url(../fonts/NotoSansCJKkr-Thin.woff) format('woff');        
 }
 @font-face{
     font-family: 'Noto Sans KR';
@@ -20,7 +20,7 @@
         url(.../fonts/NotoSansCJKkr-Light.woff2) format('woff2'),
         url(.../fonts/NotoSansCJKkr-Light.woff) format('woff'),
         url(.../fonts/NotoSansCJKkr-Light.otf) format('opentype');
-    src:local(※), url(../fonts//NotoSansCJKkr-Light.woff) format('woff');        
+    src:local(※), url(../fonts/NotoSansCJKkr-Light.woff) format('woff');        
 }
 @font-face{
     font-family: 'Noto Sans KR';
@@ -31,7 +31,7 @@
         url(../fonts/NotoSansCJKkr-Regular.woff2) format('woff2'),
         url(../fonts/NotoSansCJKkr-Regular.woff) format('woff'),
         url(../fonts/NotoSansCJKkr-Regular.otf) format('opentype');
-    src:local(※), url(../fonts//NotoSansCJKkr-Regular.woff) format('woff');        
+    src:local(※), url(../fonts/NotoSansCJKkr-Regular.woff) format('woff');        
 }
 @font-face{
     font-family: 'Noto Sans KR';
@@ -42,7 +42,7 @@
         url(../fonts/NotoSansCJKkr-Medium.woff2) format('woff2'),
         url(../fonts/NotoSansCJKkr-Medium.woff) format('woff'),
         url(../fonts/NotoSansCJKkr-Medium.otf) format('opentype');
-    src:local(※), url(../fonts//NotoSansCJKkr-Medium.woff) format('woff');        
+    src:local(※), url(../fonts/NotoSansCJKkr-Medium.woff) format('woff');        
 }
 @font-face{
     font-family: 'Noto Sans KR';
@@ -53,7 +53,7 @@
         url(../fonts/NotoSansCJKkr-Bold.woff2) format('woff2'),
         url(../fonts/NotoSansCJKkr-Bold.woff) format('woff'),
         url(../fonts/NotoSansCJKkr-Bold.otf) format('opentype');
-    src:local(※), url(../fonts//NotoSansCJKkr-Bold.woff) format('woff');        
+    src:local(※), url(../fonts/NotoSansCJKkr-Bold.woff) format('woff');        
 }
 @font-face{
     font-family: 'Noto Sans KR';
@@ -64,19 +64,18 @@
         url(../fonts/NotoSansCJKkr-Black.woff2) format('woff2'),
         url(../fonts/NotoSansCJKkr-Black.woff) format('woff'),
         url(../fonts/NotoSansCJKkr-Black.otf) format('opentype');
-    src:local(※), url(../fonts//NotoSansCJKkr-Black.woff) format('woff');        
+    src:local(※), url(../fonts/NotoSansCJKkr-Black.woff) format('woff');        
 }
 @font-face{
     font-family: 'Helvetica';
     font-style:'normal';
-    font-weight:600;
-    src:url(../fonts/HelveticaNowDisplay-Bold.eot);
-    src:url(../fonts/HelveticaNowDisplay-Bold.eot?#iefix) format('embedded-opentype'),
-        url(../fonts/HelveticaNowDisplay-Bold.woff2) format('woff2'),
-        url(../fonts/HelveticaNowDisplay-Bold.woff) format('woff'),
-        url(../fonts/HelveticaNowDisplay-Bold.otf) format('opentype'),
-        url(../fonts/HelveticaNowDisplay-Bold.ttf) format('truetype');
-    src:local(※), url(../fonts//HelveticaNowDisplay-Bold.woff) format('woff');        
+    font-weight:100;
+    src:url(../fonts/Helvetica-Light.eot);
+    src:url(../fonts/Helvetica-Light.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Helvetica-Light.woff2) format('woff2'),
+        url(../fonts/Helvetica-Light.woff) format('woff'),
+        url(../fonts/Helvetica-Light.ttf) format('truetype');
+    src:local(※), url(../fonts/Helvetica-Light.woff) format('woff');        
 }
 @font-face{
     font-family: 'Helvetica';
@@ -88,7 +87,30 @@
         url(../fonts/HelveticaNowDisplay-Regular.woff) format('woff'),
         url(../fonts/HelveticaNowDisplay-Regular.otf) format('opentype'),
         url(../fonts/HelveticaNowDisplay-Regular.ttf) format('truetype');
-    src:local(※), url(../fonts//HelveticaNowDisplay-Regular.woff) format('woff');        
+    src:local(※), url(../fonts/HelveticaNowDisplay-Regular.woff) format('woff');        
+}
+@font-face{
+    font-family: 'Helvetica';
+    font-style:'normal';
+    font-weight:700;
+    src:url(../fonts/HelveticaNowDisplay-Bold.eot);
+    src:url(../fonts/HelveticaNowDisplay-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/HelveticaNowDisplay-Bold.woff2) format('woff2'),
+        url(../fonts/HelveticaNowDisplay-Bold.woff) format('woff'),
+        url(../fonts/HelveticaNowDisplay-Bold.otf) format('opentype'),
+        url(../fonts/HelveticaNowDisplay-Bold.ttf) format('truetype');
+    src:local(※), url(../fonts/HelveticaNowDisplay-Bold.woff) format('woff');        
+}
+@font-face{
+    font-family: 'Helvetica';
+    font-style:'normal';
+    font-weight:900;
+    src:url(../fonts/Helvetica-Black.eot);
+    src:url(../fonts/Helvetica-Black.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Helvetica-Black.woff2) format('woff2'),
+        url(../fonts/Helvetica-Black.woff) format('woff'),
+        url(../fonts/Helvetica-Black.ttf) format('truetype');
+    src:local(※), url(../fonts/Helvetica-Black.woff) format('woff');        
 }
 
 
@@ -197,6 +219,7 @@ table {
     position:relative;
     width:100%;
     height:450px;
+    overflow:hidden;
 }
 .f-back {
     position:relative;

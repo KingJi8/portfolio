@@ -643,6 +643,7 @@
     justify-content:center;
     align-items:center;
     position:relative;
+    cursor:pointer;
 }
 .s2-2-m-cir6 {
     margin-right:0;
@@ -653,6 +654,8 @@
     text-align:center;
     color:#ffffff;
     font-size:16px;
+    opacity:1;
+    transition:0.5s;
 }
 .s2-2-m-cir0 span {
     color:#333333;
@@ -667,6 +670,15 @@
     font-size:20px;
     font-weight:700;
     opacity:0;
+    transition:0.5s;
+}
+[class ^= 's2-2-m-cir'].active .s2-2-m-c-code,
+[class ^= 's2-2-m-cir'].active .s2-2-m-c-color {
+    opacity:0;
+}
+[class ^= 's2-2-m-cir'].active .s2-2-m-c-keyword {
+    opacity:1;
+    transition-delay:0.2s;
 }
 .s2-3-f-font {
     font-size:50px;
@@ -899,11 +911,9 @@
         font-size:2.35vw;
     }
     /*sec04*/
-    .s4-1-imgbox, .s4-1-txtbox {
-        width:100%;
-    }
-    .s4-1-txtbox {
-        margin-top:30px;
+    .s4-1-txtbox span,
+    .s4-1-txtbox p {
+        font-size:1.5vw;
     }
 }
 @media screen and (max-width:800px) {
@@ -989,6 +999,10 @@
     .s2-con2 .c-inner-1200 {
         width:100%;
     }
+    .s2-2-m-colors {
+        width:90%;
+        margin:0 5%;
+    }
     .s2-2-toptxt {
         padding-left:10px;
     }
@@ -1007,6 +1021,14 @@
     [class ^= 's2-3-e-'] {
         padding:15px 0;
         font-size:2.5vw;
+    }
+    /*sec04*/    
+    .s4-1-i-btn {
+        font-size:1.8vw;
+    }
+    .s4-1-txtbox li {
+        width:24px;
+        height:24px;
     }
 }
 @media screen and (max-width:640px) {
@@ -1107,15 +1129,21 @@
         margin-bottom:80px;
     }
     /*sec04*/
-    [class ^= s4-con] {
-        margin-bottom:80px;
+    .s4-1-imgbox, .s4-1-txtbox {
+        width:100%;
+    }
+    .s4-1-txtbox {
+        margin-top:30px;
     }
     .s4-1-txtbox span,
     .s4-1-txtbox p {
-        font-size:14px;
+        font-size:2.4vw;
     }
     .s4-2-txt {
         font-size:5vw;
+    }
+    [class ^= s4-con] {
+        margin-bottom:80px;
     }
 }
 @media screen and (max-width:480px) {
@@ -1257,6 +1285,8 @@
     }
     .s4-1-txtbox span {
         width:100%;
+        float:initial;
+        margin-bottom:7px;
     }
     .s4-1-txtbox p {
         padding-top:5px;
@@ -1264,5 +1294,10 @@
         font-weight:normal;
         font-size:13px;
         line-height:1.5;
+        float:initial;
+    }
+    .s4-2-txt {
+        padding:15px 20px;
+        font-size:8vw;
     }
 }

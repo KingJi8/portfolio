@@ -170,13 +170,8 @@ $(function(){
                 if($(this).hasClass('active') == false) {
                     $('.s2-2-m-colors').find('li').removeClass('active');
                     $(this).addClass('active');
-                    $(this).find('.s2-2-m-c-code, .s2-2-m-c-color').stop().animate({opacity:0},du)
-                    $(this).find('.s2-2-m-c-keyword').delay(du).animate({opacity:1},du);
                 }else{
                     $(this).removeClass('active');
-                    $(this).find('.s2-2-m-c-keyword').stop().animate({opacity:0},du,function(){
-                        $(this).siblings('.s2-2-m-c-code, .s2-2-m-c-color').stop().animate({opacity:1},du);
-                    });
                 }
             })
         }

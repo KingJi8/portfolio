@@ -79,14 +79,15 @@ $(function(){
         var cPImgW = $('.c-p-imgSec').width();
         var cPImgH = cPImgW*1.273;
         var cPtxtH = $('.c-p-txtSec').outerHeight();
-        if(winW>=800 && cPImgH >= cPtxtH){
+        if(winW>800 && cPImgH >= cPtxtH){
             $('.c-p-imgSec, .c-portfolio').outerHeight(cPImgH);
-        }else if(winW>=800 && cPImgH<cPtxtH) {
+        }else if(winW>800 && cPImgH<cPtxtH) {
             $('.c-p-imgSec').outerHeight(cPImgH);
             $('.c-portfolio').outerHeight(cPtxtH);
         }else if (winW<=800){
             $('.c-p-imgSec').outerHeight(cPImgH);
             $('.c-portfolio').outerHeight(cPImgH+cPtxtH);
+            $('.c-p-Tcenter').height('auto')
         }
         
         var cPImgboxW = $('.c-p-imgbox').width();
